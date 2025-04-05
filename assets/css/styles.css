@@ -1,23 +1,58 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a; 
-    color: #e0e0e0; 
+    background-color: #000000; 
+    color: #ddd5d9; /*fuente*/
 }
+
+h1 {
+    font-family: 'Lora', serif;
+    color: rgb(247, 188, 247);
+    text-align: center;
+}
+
+h2 {
+    color: #fa9dcc;
+}
+
+body, section, p {
+    text-align: left;
+}
+
 
 header {
     background-color: #000; 
     color: #fff; 
-    text-align: center;
     padding: 25px;
     border-bottom: 4px solid #444; 
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.container img {
+    width: 95%;           /* Reducí el ancho */
+    height: 300px;        /* Aumentá la altura */
+    object-fit: cover;    /* Mantiene la imagen recortada sin deformarla */
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+
 nav {
     background: #333; 
-    padding: 15px 0;
+    padding: 5px 0;
     border-bottom: 4px solid #444;
+    text-align: center;
+
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center;
+
+    height: 25px;  
 }
 
 nav ul {
@@ -102,7 +137,12 @@ footer {
     text-align: center;
     padding: 15px;
     background: #000; 
-    color: #e0e0e0; 
+    color: #f387dc; 
     margin-top: 30px;
     border-top: 4px solid #444; 
+}
+
+form {
+    max-width: 1250px;    /* Ancho máximo */
+    margin: 0 auto;      /* Centrado horizontal */
 }
